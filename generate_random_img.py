@@ -8,7 +8,7 @@ def generate_image(mb):
 	if x > 10000:
 		print("You can not generate such a large image")
 		return False
-		
+
 
 	a = numpy.random.rand(x, x, 3) * 255
 	im_out = Image.fromarray(a.astype('uint8')).convert('RGBA')
